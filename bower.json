@@ -1,0 +1,14 @@
+{
+  "name": "cmb2-qtranslate",
+  "homepage": "https://github.com/jmarceli/cmb2-qtranslate",
+  "authors": [
+    "Jan Grzegorowski <grzegorowski@gmail.com>"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jmarceli/cmb2-qtranslate.git"
+  },
+  "overrides": {
+  }
+}
