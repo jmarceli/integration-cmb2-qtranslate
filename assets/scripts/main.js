@@ -6,7 +6,7 @@
   // jQuery selector for qTranslate enabled fields
   // data-qtranslate attribute would be better but wp_editor (WYSIWYG) doesn't 
   // support custom data attributes
-  var qt_selector = '.cmb2-qtranslate';
+  var qt_selector = '.cmb2-qtranslate,[data-cmb2-qtranslate]';
 
   // Selectors for field types supported by plugin
   // unsupported fields will display JS alert with info
