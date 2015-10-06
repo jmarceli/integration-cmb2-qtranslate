@@ -99,6 +99,10 @@ If including the library in your plugin or theme:
 
 ## Changelog
 
+### 0.0.3
+
+* add support for `data-cmb2-qtranslate`
+
 ### 0.0.1
 
 * first release
