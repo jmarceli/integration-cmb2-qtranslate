@@ -102,7 +102,7 @@ class CMB2qTranslate {
 	 * Register and enqueues public-facing JavaScript files.
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_script( $this->get_plugin_slug() . '-plugin-script', plugins_url( 'dist/scripts/main.js', __FILE__ ), array( 'jquery' ), self::VERSION );
+		wp_enqueue_script( $this->get_plugin_slug() . '-plugin-script', plugins_url( 'assets/scripts/main.js', __FILE__ ), array( 'jquery' ), self::VERSION );
 	}
 
 	/**
