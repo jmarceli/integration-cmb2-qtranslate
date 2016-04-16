@@ -3,7 +3,7 @@
 **Contributors:**      [jmarceli](https://github.com/jmarceli)  
 **Tags:**              cmb2, qtranslate, integration, translation  
 **Tested with:**       CMB2 (2.1.0), qTranslate X (3.4.5), Wordpress (4.3.0)   
-**Current version**    0.0.4  
+**Current version**    0.1.1  
 **License:**           GPLv2 or later  
 **License URI:**       [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)  
 
