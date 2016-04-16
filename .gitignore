@@ -41,3 +41,6 @@ cache
 
 # Nodejs
 node_modules
+
+# SVN sync script https://github.com/thenbrent/multisite-user-management/blob/master/deploy.sh
+deploy.sh

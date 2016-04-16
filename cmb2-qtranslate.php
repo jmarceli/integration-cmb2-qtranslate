@@ -16,7 +16,7 @@
  * Plugin Name:       CMB2-qTranslate
  * Plugin URI:        http://github.com/jmarceli/cmb2-qtranslate
  * Description:       CMB2 qTranslate-X integration
-Version:           0.0.6
+Version:           0.1.0
  * Author:            Jan Grzegorowski
  * Author URI:        http://grzegorowski.com
  * License:           GPL-2.0+
@@ -38,7 +38,7 @@ class CMB2qTranslate {
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
 	 */
-	const VERSION = '0.0.6';
+	const VERSION = '0.1.0';
 
 	/**
 	 * Unique identifier for your plugin.

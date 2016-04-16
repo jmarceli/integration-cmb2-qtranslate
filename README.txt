@@ -4,7 +4,7 @@ Donate link: http://grzegorowski.com/
 Tags: cmb2, qtranslate, qtranslatex, integration
 Requires at least: 4.0
 Tested up to: 4.3
-Stable tag: 0.0.6
+Stable tag: 0.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -111,6 +111,9 @@ Install as usual from wordpress.org plugins page
 
 == Changelog ==
 
+= 0.1.0 =
+
+* fixed issues (see Github project page)
 
 = 0.0.4 =
 
