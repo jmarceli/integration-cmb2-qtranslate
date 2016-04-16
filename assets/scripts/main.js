@@ -25,13 +25,16 @@
       // all meta box fields
       var $fields = $meta_box.find(qt_selector);
 
-      // remove all excessive translatable elements
-      // wysiwygs are translatable by default
-      // (why? its probably some qTranslate default behaviour) 
-      // it needs to be reset in case anyone doesn't want that
+      // make elements which doesn't match qt_selector untranslatable
+      // (because wysiwygs are translatable by default)
       $meta_box.find('.qtranxs-translatable').each(function() {
-        $(this).removeClass('qtranxs-translatable');
+        // second condition is for matching wysiwyg which is followed by textarea elements
+        if ( $(this).is(qt_selector) || $(this).nextAll(qt_selector).length ) return;
+
         qTranslateConfig.qtx.removeContentHook(this);
+        // because class name may be duplicated which is
+        // not handled by qTranslate plugin (e.g. wysiwyg)
+        $(this).removeClass('qtranxs-translatable');
       });
 
       // check each field
@@ -44,13 +47,10 @@
           return;
         }
 
-        // ensure qtranslate css class
-        if (!$field.hasClass('qtranxs-translatable')) {
-          $field.addClass('qtranxs-translatable');
+        // reinitialize qTranslate if it is not initializated 
+        if ( !qTranslateConfig.qtx.hasContentHook(field.id) ) {
+          qTranslateConfig.qtx.refreshContentHook(field);
         }
-
-        // initialize qTranslate for 
-        qTranslateConfig.qtx.addContentHookB(field, form);
 
         // create Language Switch Buttons
         var langSwitchWrap = cmb2qtranslate.createSetOfLSB();
@@ -101,6 +101,8 @@
 
   // initialize CMB2 qTranslate integration after window is loaded
 	$(window).load(function() {
+    //return;
+    // TODO: it works ... just add LSBS and don't do anything else
 
 		// Prevent from being triggered again
 		if (loaded) {
