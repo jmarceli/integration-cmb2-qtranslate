@@ -101,9 +101,6 @@
 
   // initialize CMB2 qTranslate integration after window is loaded
 	$(window).load(function() {
-    //return;
-    // TODO: it works ... just add LSBS and don't do anything else
-
 		// Prevent from being triggered again
 		if (loaded) {
 			return;
